@@ -12,9 +12,6 @@ import javax.persistence.Id;
 @Entity
 public class Client implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -69,10 +66,5 @@ public class Client implements Serializable {
 	public void setAnddress(String anddress) {
 		this.address = anddress;
 	}
-	
-	
-	
-	
-	
 	
 }

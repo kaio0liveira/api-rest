@@ -10,13 +10,13 @@ import com.ChallengeJava.exception.ClientNotFoundException;
 import com.ChallengeJava.repository.ClientRepository;
 
 @Service
-public class ServiceClient {
+public class ClientService {
 	
 	@Autowired
 	private ClientRepository cr;
 	
 	//validação de cliente, caso ID não existir
-	public Client FindId(Long id) throws ClientNotFoundException {
+	public Client findId(Long id) throws ClientNotFoundException {
 		Optional<Client> client = cr.findById(id);
 		
 		Client client1 = null;

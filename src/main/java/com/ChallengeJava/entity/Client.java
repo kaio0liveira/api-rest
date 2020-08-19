@@ -67,7 +67,7 @@ public class Client implements Serializable {
 	}
 
 	public void setAnddress(String anddress) {
-		this.anddress = anddress;
+		this.address = anddress;
 	}
 	
 	

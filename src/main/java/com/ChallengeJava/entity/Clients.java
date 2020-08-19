@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Client implements Serializable {
+public class Clients implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -24,10 +24,10 @@ public class Client implements Serializable {
 	
 	private String address;
 
-	public Client() {
+	public Clients() {
 	}
 
-	public Client (Long id, String name, String cpf, String address) {
+	public Clients (Long id, String name, String cpf, String address) {
 		super();
 		this.id = id;
 		this.name = name;

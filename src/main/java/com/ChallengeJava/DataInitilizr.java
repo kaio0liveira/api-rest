@@ -17,9 +17,9 @@ public class DataInitilizr implements ApplicationListener<ContextRefreshedEvent>
 	public void onApplicationEvent(ContextRefreshedEvent event) {
 		
 		
-		Clients c = new Clients(1L,"kaio", "12324353", "Brasilia - DF");
+		//Clients c = new Clients(1L,"kaio", "12324353", "Brasilia - DF");
 		
-		repos.save(c);
+		//repos.save(c);
 
 }
 }

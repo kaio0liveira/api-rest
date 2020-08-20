@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ChallengeJava.entity.Clients;
@@ -34,7 +35,7 @@ public class ClientsController {
 	public ResponseEntity<Clients> get(@PathVariable Long id) throws ClientNotFoundException {
 		return ResponseEntity.ok(clientsService.findById(id));
 	}
-
+	
 	@PostMapping
 	public ResponseEntity<Clients> save(@RequestBody Clients client) {
 		clientsService.save(client);

@@ -21,7 +21,7 @@ public class ClientsService {
 		
 		Clients client1 = null;
 		if(!client.isPresent()) {
-			throw new ClientNotFoundException("ID not found!");
+			throw new ClientNotFoundException("ID "+id+" not found!");
 		}else {
 			client1 = client.get();
 		}

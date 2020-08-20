@@ -5,6 +5,7 @@ GET - https://challengejava.herokuapp.com/api/clients
 * Java 8
 * JPA
 * Spring Boot
+* Spring Data
 * JSON
 * Maven
 * Postgresql

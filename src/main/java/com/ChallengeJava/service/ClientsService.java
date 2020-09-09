@@ -31,8 +31,15 @@ public class ClientsService {
 		return clientsRepository.findAll();
 	}
 
-	public void delete(Long id) {
-		clientsRepository.deleteById(id);
+	public void delete(Long id) throws ClientNotFoundException {
+		Optional <Clients> client = clientsRepository.findById(id);
+		
+		
+		if (!client.isPresent()) {
+			throw new ClientNotFoundException("ID "+id+" not found!");
+		}else {
+			clientsRepository.deleteById(id);
+		}
 	}
 	
 	public Clients update(Long id, Clients client) throws ClientNotFoundException {
